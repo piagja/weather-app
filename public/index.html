@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="styles.css" rel="stylesheet">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/skycons/1396634940/skycons.min.js"></script>
+  <script defer type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwTmtqAAIQeRcMU1MtCFcnbiDAwXm0NTA&libraries=places"></script>
+  <script defer src='./script.js'></script>
+  <title>APP Previsão do Tempo</title>
+</head>
+<body>
+<div class='container'>
+  <div class='header'>
+    <div class='container-icon'>
+      <canvas id='icone' width='100' height='100'></canvas>
+    </div>
+  </div>
+  <div class='conteudo'>
+    <div class='informacao-geral'>
+      <div class='status' data-status>Digite o País/Estado/Cidade</div>
+      <div class='local' data-local>para encontrar o clima</div>
+    </div>
+    <div class='secao-detalhes'>
+      <div class="detalhes">
+        <div class="titulo">Vento</div>
+        <div class="valor" data-vento></div>
+      </div>
+      <div class="detalhes borda" area-temperatura>
+        <div class="titulo">Temperatura</div>
+        <div class="valor" data-temperatura><span class='span-temperatura'></span></div>
+      </div>
+      <div class="detalhes">
+        <div class="titulo">Precipitação</div>
+        <div class="valor" data-precipitacao></div>
+      </div>
+    </div>
+    <div class="campo-procura">
+      <input type="text" class="input-procura" input-procura placeholder='Entre com o local'>
+    </div>
+  </div>
+</div>
+<a href='https://darksky.net/poweredby' class='darksky-logo'>Powered by DarkSky</a>
+</body>
+</html>
