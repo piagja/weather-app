@@ -6,8 +6,6 @@ Aplicação de Clima/Tempo usando API do Google e do DarkSky. Usando boas práti
 ### Axios
 ### Express
 
-Instalr os pacotes com:
-npm i
+Install the packages: npm i
 
-Rode com:
-npm start
+Run with: npm start
